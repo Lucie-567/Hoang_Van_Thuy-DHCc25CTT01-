@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #0a0e2e;
+    color: #f0e8c8;
+    border: 2px solid #e8c547;
+    background-image: url('images/nen.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0d1240;
+    padding: 30px 20px;
+    border-bottom: 3px solid #e8c547;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#toggleTheme {
+    background: #e8c547;
+    color: #0a0e2e;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body.light-mode {
+    background-color: #f5f0e0 !important;
+    color: #1a1a2e;
+}
+
+body.light-mode header,
+body.light-mode .mo-ta,
+body.light-mode .infvangogh,
+body.light-mode .box,
+body.light-mode .info-box {
+    background: #e8dfc0;
+    color: #1a1a2e;
+}
+
+
+.logo-text-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #e8c547;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #9db4d4;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    color: #f0e8c8;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.menu-nav a:hover {
+    color: #e8c547;
+    border-bottom: 2px solid #e8c547;
+}
+
+.anh-chinh img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.section-block {
+    margin-bottom: 60px;
+}
+
+.tieu-de {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.tieu-de h2 {
+    font-size: 26px;
+    color: #e8c547;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.tieu-de p {
+    color: #eaf08e;
+}
+
+.thongtin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.box {
+    background: #0d1240;
+    border: 1px solid #2a4070;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+.box:hover {
+    background-color: #dcf120;
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 30px rgb(217, 255, 0);
+    color: #080870;
+}
+
+.box:hover h3,
+.box:hover p,
+.box:hover a {
+    color: #080870 !important;
+}
+
+.box h3 {
+    font-size: 13px;
+    color: #4177c3;
+    margin-bottom: 6px;
+}
+
+.mo-ta,
+.infvangogh {
+    background: #0d1240;
+    border-left: 4px solid #e8c547;
+    padding: 20px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    color: #c8d8e8;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.trich-dan {
+    text-align: center;
+    padding: 25px;
+    border: 1px solid #e8c547;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.trich-dan p {
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.trich-dan span {
+    color: #9db4d4;
+    font-size: 13px;
+}
+
+.anh-vangogh {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.anh-vangogh img {
+    max-width: 250px;
+    border-radius: 8px;
+    border: 2px solid #e8c547;
+}
+
+.link {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.menu-nav a.active {
+color: #e8c547;
+border-bottom: 2px solid #e8c547;
+}
+
+.info-box {
+background: #0d1240;
+color: #f0e8c8;
+text-align: center;
+padding: 15px;
+margin: 15px auto;
+border: 1px solid #e8c547;
+border-radius: 8px;
+max-width: 800px;
+}
+
+footer {
+    background: #0d1240;
+    border-top: 3px solid #e8c547;
+    text-align: center;
+    padding: 20px;
+    color: #9db4d4;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    line-height: 2;
+}
+
+footer span {
+    color: #e8c547;
+}
